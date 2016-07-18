@@ -1,0 +1,23 @@
+extends base
+block body
+	h1 Create an account!
+	if error 
+		p ERROR #{error}
+	form(method="post")
+		span First Name :-
+		input(type="text",name="FirstName",required=true)
+		br
+
+		span Last Name :-
+		input(type="text",name="LastName",required=true)
+		br
+
+		span Email :-
+		input(type="email",name="Email",required=true)
+		br
+
+		span Password :-
+		input(type="password",name="Password",required=true)
+		br
+
+		input(type="submit")

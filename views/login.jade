@@ -1,0 +1,18 @@
+extends base
+
+block body
+	h1 Log into your account
+
+	if error 
+		p ERROR #{error}
+
+	form(method="post")
+		span Login ID :-
+		input(type="email",name="Email",required=true)
+		br
+			
+		span Password :-
+		input(type="password",name="password",required=true)
+		br
+
+		input(type="submit")
